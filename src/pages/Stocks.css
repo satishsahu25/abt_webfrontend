@@ -1,0 +1,312 @@
+/* — Reset & Base — */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.dashboard {
+  font-family: Arial, sans-serif;
+  background: #f8f9fb;
+  color: #333;
+}
+
+/* — Header — */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
+.top-nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.logo {
+  /* font-size: 24px; */
+  height: 5rem;
+  width: 10rem;
+}
+.main-links {
+  margin-left: 20px;
+}
+.main-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+}
+.main-links a.active {
+  color: #000;
+  font-weight: 700;
+}
+.utilities {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.search {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 14px;
+}
+.terminal {
+  margin-left: 12px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.bell, .avatar {
+  margin-left: 12px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+}
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background: red;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+
+/* — Sub-nav — */
+.sub-nav {
+  display: flex;
+  padding: 8px 100px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.sub-nav a {
+  margin-right: 24px;
+  text-decoration: none;
+  color: #666;
+  padding-bottom: 4px;
+  font-size: 14px;
+}
+.sub-nav a.active {
+  color: #000;
+  border-bottom: 2px solid #00b14f;
+  font-weight: 600;
+}
+
+/* — Index Bar — */
+.indexes {
+  display: flex;
+  overflow-x: auto;
+  background: #fff;
+  padding: 10px 100px;
+  gap: 30px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.index {
+  white-space: nowrap;
+  font-size: 14px;
+}
+.index .label {
+  display: block;
+  color: #555;
+}
+.index .value {
+  display: block;
+  font-weight: 600;
+  margin: 2px 0;
+}
+.index .pos { color: #00b14f; }
+.index .neg { color: #ff5b5b; }
+
+/* — Main Content Layout — */
+.content {
+  display: flex;
+  gap: 20px;
+  padding: 20px 100px;
+}
+.left-col {
+  flex: 2;
+}
+.right-col {
+  flex: 1;
+}
+
+/* — Most Traded — */
+.most-traded header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+.most-traded h2 {
+  font-size: 18px;
+  color: #000;
+}
+.most-traded a {
+  font-size: 14px;
+  color: #00b14f;
+  text-decoration: none;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+.card .name {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.card .price {
+  font-weight: bold;
+}
+.card .pos { color: #00b14f; }
+.card .neg { color: #ff5b5b; }
+
+/* — Products & Tools — */
+.tools-section {
+  margin-top: 30px;
+}
+.tools-section h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 12px;
+}
+.tool {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.tool img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+}
+.tool span {
+  font-size: 13px;
+}
+
+/* — Investments — */
+.investments {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.investments header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+.investments h2 {
+  font-size: 18px;
+}
+.investments a {
+  font-size: 14px;
+  color: #00b14f;
+  text-decoration: none;
+}
+.inv-cards {
+  display: flex;
+  gap: 12px;
+}
+.inv-card {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+.inv-card.pos {
+  background: #e9f8f3;
+  color: #00b14f;
+}
+.inv-card.neg {
+  background: #fdf2f2;
+  color: #ff5b5b;
+}
+
+/* — Watchlists — */
+.watchlists {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.watchlists header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+.watchlists a {
+  font-size: 14px;
+  color: #00b14f;
+  text-decoration: none;
+}
+.watchlist + .watchlist {
+  margin-top: 8px;
+}
+.wl-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  cursor: pointer;
+  border-top: 1px solid #f0f0f0;
+}
+.wl-items {
+  list-style: none;
+  padding-left: 16px;
+}
+.wl-items li {
+  padding: 4px 0;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+/* — Responsive — */
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+  }
+  .right-col {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-nav, .sub-nav {
+    flex-wrap: wrap;
+  }
+  .search {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+  .tools {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  }
+}

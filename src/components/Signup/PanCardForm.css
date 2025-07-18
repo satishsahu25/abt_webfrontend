@@ -1,0 +1,94 @@
+.pan-card-container {
+  color: #fff;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.pan-card-form p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+.pan-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #646464;
+  background: #18181b;
+  color: #fff;
+  font-size: 1.15rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.pan-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.confirm-btn,
+.edit-btn {
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.confirm-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.confirm-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.edit-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.edit-btn:hover {
+  background-color: #00c806;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pan-card-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .pan-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .confirm-btn,
+  .edit-btn {
+    width: 100%;
+  }
+}

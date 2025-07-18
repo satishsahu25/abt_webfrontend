@@ -1,0 +1,115 @@
+.stock-detail-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .stock-detail-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+
+.left-panel,
+.right-panel {
+  flex: 1;
+  min-width: 300px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.stock-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stock-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.stock-price {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.stock-change {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.stock-change.positive {
+  color: green;
+}
+
+.stock-change.negative {
+  color: red;
+}
+
+.stock-chart {
+  margin: 20px 0;
+}
+
+.mode-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mode-buttons button {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.buy-button {
+  background-color: green;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.back-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loading {
+  padding: 20px;
+  text-align: center;
+}

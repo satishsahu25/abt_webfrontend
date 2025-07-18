@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './pages/Home.jsx'
+import Login from './pages/Login.jsx';
+import Signup  from './pages/Signup.jsx';
+// import TradingPlatformHomepage from './pages/Demo.jsx';
+import Stocks from './pages/Stocks.jsx';
+import IndividualStock from './components/ui/IndividualStock.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <CartProvider> */}
+      <Router>
+           <Routes>
+             {/* <Route path="/" element={<TradingPlatformHomepage/>} /> */}
+             <Route path="/" element={<Home/>} />
+             <Route path="/login" element={<Login />} />
+             <Route path="/signup" element={<Signup />} />
+             <Route path="/stocks" element={<Stocks />} />
+             <Route path="/stocks/:id" element={<IndividualStock />} />
+             {/* <Route path="/orders" element={<Orders />} /> */}
+            {/* <Route path="/bank-details" element={<BankDetails />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/support" element={<Support />} />
+            <Route path="/login" element={<Login />} /> */}
+
+           </Routes>
+         </Router>
+      {/* </CartProvider> */}
+    </>
   );
 }
 

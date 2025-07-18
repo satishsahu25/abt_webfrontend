@@ -1,0 +1,107 @@
+.review-address-container {
+  color: #fff;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.review-address-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.review-address-subtitle {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: -10px;
+  word-break: break-word;
+}
+
+.review-address-divider {
+  border: none;
+  border-top: 1px solid white;
+  margin: 1rem 0;
+}
+
+
+.review-address-label {
+  color: #aaa;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.review-address-value {
+  color: #fff;
+  /* background: #18181b; */
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 18px 16px;
+  margin-bottom: 30px;
+  
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+.review-address-actions {
+  display: flex;
+  gap: 18px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.review-address-btn {
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  max-width: 100%;
+  min-width: 120px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.review-address-btn.edit {
+  background: #18181b;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.review-address-btn:active {
+  background: #eee;
+}
+
+@media (max-width: 600px) {
+  .review-address-container {
+    padding: 18px 4vw;
+    max-width: 100vw;
+    min-width: 0;
+  }
+  .review-address-value {
+    font-size: 1rem;
+    padding: 12px 8px;
+  }
+  .review-address-actions {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .review-address-btn {
+    width: 100%;
+    min-width: 0;
+  }
+}

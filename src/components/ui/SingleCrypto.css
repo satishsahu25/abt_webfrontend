@@ -1,0 +1,162 @@
+/* CryptoTradingUI.css */
+
+.crypto-ui {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background: #0d111c;
+  color: white;
+  min-height: 100vh;
+}
+
+.price-panel {
+  background: #161d2f;
+  border-radius: 1rem;
+  padding: 2rem;
+  flex: 2;
+}
+
+.btc-icon {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.tag {
+  background: #f7931a;
+  color: black;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+.green {
+  color: #00d395;
+}
+
+.red {
+  color: #ff4d4f;
+}
+
+.timeframes {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.timeframes button {
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.timeframes button:hover {
+  background: #222;
+}
+
+.chart-placeholder {
+  background: #1c2537;
+  height: 300px;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+.order-box {
+  background: #161d2f;
+  border-radius: 1rem;
+  padding: 2rem;
+  flex: 1;
+}
+
+.order-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.order-tabs button {
+  flex: 1;
+  padding: 0.75rem;
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-tabs button.active {
+  border-color: #fcd535;
+  color: #fcd535;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #1e293b;
+  color: white;
+  font-size: 1rem;
+}
+
+.token-label {
+  background: #1e293b;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.conversion, .range {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+.buy-button {
+  width: 100%;
+  background: #fcd535;
+  border: none;
+  padding: 0.75rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.buy-button:hover {
+  background: #ffe47a;
+}
+
+@media (min-width: 768px) {
+  .crypto-ui {
+    flex-direction: row;
+  }
+}

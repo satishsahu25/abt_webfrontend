@@ -1,0 +1,125 @@
+/* HoldingsDashboard.css */
+.holdings-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.holdings-summary {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.summary-card > div {
+  min-width: 140px;
+}
+
+.analyze-btn {
+  background: #f3f6fb;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.holdings-table {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.table-header {
+  font-weight: bold;
+  color: #555;
+}
+
+.table-row p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.red {
+  color: #e53935;
+}
+
+.green {
+  color: #2e7d32;
+}
+
+.select-prompt {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pointer-box {
+  background: #ecfdf5;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.pointer-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.add-money {
+  color: #0041e5;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .summary-card,
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .summary-card {
+    gap: 1rem 2rem;
+  }
+
+  .table-header span,
+  .table-row > div {
+    padding: 0.5rem 0;
+  }
+}
