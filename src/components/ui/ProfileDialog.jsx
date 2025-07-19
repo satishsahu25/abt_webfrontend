@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProfileDialog.css";
 import { useNavigate } from "react-router-dom";
+import { Settings } from 'lucide-react';
 
 export default function ProfileDialog({ open, onClose }) {
   const navigate = useNavigate();
@@ -11,6 +12,11 @@ export default function ProfileDialog({ open, onClose }) {
     navigate(path);
     onClose();
   };
+
+  const openSetting=()=>{
+    navigate("/user");
+    // alert("open")
+  }
 
   const logout = () => {
     localStorage.clear();
@@ -23,8 +29,9 @@ export default function ProfileDialog({ open, onClose }) {
     <div className="profile-backdrop" onClick={onClose}>
       <div className="profile-dialog" onClick={(e) => e.stopPropagation()}>
         <div className="profile-header">
-          <h3>Satish Sahu</h3>
-          <p>satishk7619@gmail.com</p>
+        <div>  <h3>Satish Sahu</h3>
+          <p>satishk7619@gmail.com</p></div>
+          <Settings size={24} color="#9ca3af" onClick={openSetting}/>
         </div>
 
         <div className="profile-list">

@@ -6,6 +6,9 @@ import Signup  from './pages/Signup.jsx';
 // import TradingPlatformHomepage from './pages/Demo.jsx';
 import Stocks from './pages/Stocks.jsx';
 import IndividualStock from './components/ui/IndividualStock.jsx';
+import CryptoDashboard from './components/ui/CryptoList.jsx';
+import CryptoTradingUI from './components/ui/SingleCrypto.jsx';
+import UserProfile from './components/ui/ProfileSetting.jsx';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
             <Route path="/reports" element={<Reports />} />
             <Route path="/support" element={<Support />} />
             <Route path="/login" element={<Login />} /> */}
+            <Route path="/crypto" element={<CryptoDashboard />} /> 
+            <Route path="/crypto/1" element={<CryptoTradingUI/>} /> 
+            <Route path="/user" element={<UserProfile/>} /> 
 
            </Routes>
          </Router>

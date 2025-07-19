@@ -22,6 +22,8 @@
 
 .profile-header {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .profile-header h3 {
@@ -72,4 +74,7 @@
   font-weight: bold;
   border-top: 1px solid #eee;
   padding-top: 12px;
+}
+.setting{
+  height: 3rem;
 }
