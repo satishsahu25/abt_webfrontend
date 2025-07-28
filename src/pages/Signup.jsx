@@ -10,7 +10,7 @@ import DateofBirth from "../components/Signup/DateofBirth";
 import PanCardForm from "../components/Signup/PanCardForm";
 
 export default function SignupPage() {
-  const [step, setStep] = useState(7);
+  const [step, setStep] = useState(0);
   const [region, setRegion] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18  # Use version suitable for your React project
+    commands:
+      - echo Installing dependencies...
+      - npm install
+      - echo Installing Nginx...
+      - sudo apt-get update
+      - sudo apt-get install -y nginx
+
+  build:
+    commands:
+      - echo Building the React app...
+      - npm run build
+
+  post_build:
+    commands:
+      - echo Build completed.
+      - echo Copying build files to Nginx root directory...
+      - sudo rm -rf /var/www/html/*
+      - sudo cp -r build/* /var/www/html/
+      - echo Restarting Nginx...
+      - sudo systemctl restart nginx
+
+artifacts:
+  files:
+    - '**/*'
